@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 public class SimpleGame {
     private Scanner scanner;
@@ -29,7 +30,6 @@ public class SimpleGame {
                 System.out.println("Привет, Вячеслав!");
                 break;
             }
-
             if (i == 1){
                 System.out.println("Коенец игры!");
                 break;
@@ -49,4 +49,38 @@ public class SimpleGame {
         }
     }
 
+
+    public void checkBracketSequence() {
+        System.out.println("Введи последовательность скобок, например: [((())()(())]],\nдля проверки правильности:");
+        scanner = new Scanner(System.in);
+        Stack<String> stack = new Stack<>();
+        String bracketSequence = scanner.nextLine();
+        String charAt;
+        boolean isGood = true;
+
+        for (int i = 0; i < bracketSequence.length(); i++) {
+            charAt = (String.valueOf(bracketSequence.charAt(i)));
+
+            if (charAt.equals("(") || charAt.equals("[") || charAt.equals("{")) {
+                stack.add(charAt);
+            }
+            else if (charAt.equals(")") || charAt.equals("]")  || charAt.equals("}")) {
+                if (stack.isEmpty()) {
+                    isGood = false;
+                    break;
+                }
+                String openBracket = stack.pop();
+                if (openBracket.equals("(") && charAt.equals(")")) continue;
+                if (openBracket.equals("[") && charAt.equals("]") ) continue;
+                if (openBracket.equals("{") && charAt.equals("}")) continue;
+                isGood = false;
+            }
+        }
+        if (isGood && stack.size() == 0) {
+            System.out.println("Корректноя последовательность!");
+        } else
+            System.out.println("Некорректноя последовательность!");
+
+        System.out.println("Спасибо за участие!");
+    }
 }

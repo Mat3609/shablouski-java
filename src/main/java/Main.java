@@ -8,5 +8,7 @@ public class Main {
         simpleGame.playNames();
         System.out.println();
         simpleGame.showNumbersMultiplesOfThree();
+        System.out.println();
+        simpleGame.checkBracketSequence();
     }
 }
