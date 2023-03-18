@@ -1,5 +1,6 @@
 import java.util.Stack;
 
+
 public class SimpleGame {
     private final String answer = "Вячеслав";
 
@@ -20,10 +21,12 @@ public class SimpleGame {
         for (int i = 8; i > 0; i--) {
 
             if (UserInput.inputString().equals(answer)) {
+                System.out.println("Ты угадал!");
                 System.out.println("Привет, Вячеслав!");
                 break;
             }
             if (i == 1){
+                System.out.println("Нет такого имени!");
                 System.out.println("Коенец игры!");
                 break;
             }
@@ -33,38 +36,47 @@ public class SimpleGame {
     }
 
 
-    public void showNumbersMultiplesOf(int number) {
-        System.out.println("Числа кратные " + number + ":");
-        for (int i = 1; i < 30; i++) {
-            if (i % number == 0) {
-                System.out.println(i);
+    public void showNumbersMultiplesOfThree() {
+        System.out.println("Введи несколько чисел через пробел,\nчтобы узнать числа кратные трем:");
+        String[] userInput = UserInput.inputString().split(" ");
+        int[] numbers = new int[userInput.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = Integer.parseInt(userInput[i]);
+        }
+
+        System.out.println("Числа кратные 3:");
+        for (int number : numbers) {
+            if (number % 3 == 0) {
+                System.out.println(number);
             }
         }
     }
 
 
+
     public void checkBracketSequence() {
-        System.out.println("Введи последовательность скобок, например: [((())()(())]],\nдля проверки правильности:");
+        System.out.println("Введи последовательность скобок, например: [((())()(())]],\nдля проверки правильности последовательности:");
         Stack<String> stack = new Stack<>();
         String bracketSequence = UserInput.inputString();
-        String charAt;
+        String bracket;
         boolean isGood = true;
 
         for (int i = 0; i < bracketSequence.length(); i++) {
-            charAt = (String.valueOf(bracketSequence.charAt(i)));
+            bracket = (String.valueOf(bracketSequence.charAt(i)));
 
-            if (charAt.equals("(") || charAt.equals("[") || charAt.equals("{")) {
-                stack.add(charAt);
+            if (bracket.equals("(") || bracket.equals("[") || bracket.equals("{")) {
+                stack.add(bracket);
             }
-            else if (charAt.equals(")") || charAt.equals("]")  || charAt.equals("}")) {
+            else if (bracket.equals(")") || bracket.equals("]")  || bracket.equals("}")) {
                 if (stack.isEmpty()) {
                     isGood = false;
                     break;
                 }
                 String openBracket = stack.pop();
-                if (openBracket.equals("(") && charAt.equals(")")) continue;
-                if (openBracket.equals("[") && charAt.equals("]")) continue;
-                if (openBracket.equals("{") && charAt.equals("}")) continue;
+                if (openBracket.equals("(") && bracket.equals(")")) continue;
+                if (openBracket.equals("[") && bracket.equals("]")) continue;
+                if (openBracket.equals("{") && bracket.equals("}")) continue;
                 isGood = false;
             }
         }

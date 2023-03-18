@@ -7,9 +7,11 @@ public class Main {
         System.out.println();
         simpleGame.playNames();
         System.out.println();
-        System.out.println("Введи число и узнай числа кратные ему:");
-        simpleGame.showNumbersMultiplesOf(UserInput.inputInt());
+        simpleGame.showNumbersMultiplesOfThree();
         System.out.println();
         simpleGame.checkBracketSequence();
+
+
+
     }
 }

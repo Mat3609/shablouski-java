@@ -1,23 +1,26 @@
 
-z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(¥°–Ãùÿÿÿÿ8Õ±™«í0
-u	java:S1355"YReduce the total number of break and continue statements in this loop to use at most one.(¼¥¬¦8Õ±™«í0
-C
-java:S1170"!Make this final field static too.(ÇÀàğøÿÿÿÿ8Á²™«í0
-r
-java:S11490"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ8Â²™«í0
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¢æ¾“ûÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Á£¿°8Ã²™«í0
-T	java:S106"9Replace this use of System.out or System.err by a logger.(¼¢‹38Ä²™«í0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(–á… ÿÿÿÿÿ8Ä²™«í0
-U	java:S106"9Replace this use of System.out or System.err by a logger.( Ïôš8Ä²™«í0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Æ•‰Ø8Ä²™«í0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(åŞ¢8Å²™«í0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(˜±ÈŞıÿÿÿÿ8Å²™«í0
-Z	java:S106%"9Replace this use of System.out or System.err by a logger.(«’»¿ûÿÿÿÿ8Å²™«í0
-Z	java:S106("9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ8Å²™«í0
-t
-java:S3776."RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ƒŞ˜ûÿÿÿÿ8Æ²™«í0
-Z	java:S106/"9Replace this use of System.out or System.err by a logger.(ºˆóÿüÿÿÿÿ8Æ²™«í0
-U	java:S106H"9Replace this use of System.out or System.err by a logger.(û«Ô‡8È²™«í0
-U	java:S106J"9Replace this use of System.out or System.err by a logger.(“ÿ¶Á8È²™«í0
-U	java:S106L"9Replace this use of System.out or System.err by a logger.(ÕÀ8È²™«í0
+s	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(¥°–Ãùÿÿÿÿ
+n	java:S135A"YReduce the total number of break and continue statements in this loop to use at most one.(¼¥¬¦
+<
+java:S1170"!Make this final field static too.(ÇÀàğøÿÿÿÿ
+k
+java:S1149<"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(¢æ¾“ûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Á£¿°
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¼¢‹3
+S	java:S106"9Replace this use of System.out or System.err by a logger.(–á… ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²ƒÛéøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.( Ïôš
+N	java:S106"9Replace this use of System.out or System.err by a logger.(åŞ¢
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Æ•‰Ø
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(åŞ¢
+S	java:S106""9Replace this use of System.out or System.err by a logger.(˜±ÈŞıÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ƒçŞ˜ùÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(»æÍ³ıÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(·ùßóıÿÿÿÿ
+m
+java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ƒŞ˜ûÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(“ê±
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(û«Ô‡
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(“ÿ¶Á
+U	java:S106X"9Replace this use of System.out or System.err by a logger.(ÕÀ8ºÃ§ï0
